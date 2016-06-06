@@ -10,3 +10,5 @@ the page number
 6. User can switch to a different language by selecting from the language drop down box.
 7. User can see a different color/theme of table by selecting from the Theme drop down
 box.
+
+Tech:
