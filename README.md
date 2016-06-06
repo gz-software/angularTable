@@ -1,4 +1,7 @@
-Summary:
+Angular Table
+===
+Summary
+-----
 1. A Table that display the inventories columns (Inventory Id, Category, Description,
 Quantity, Price)
 2. Colum can be sort asc and desc.
@@ -11,4 +14,5 @@ the page number
 7. User can see a different color/theme of table by selecting from the Theme drop down
 box.
 
-Tech:
+Tech
+-----
