@@ -1,0 +1,15 @@
+{
+    "TITLE": "Angular的表格演示",
+    "INTRO" : "清单表格",
+    "COL_INVENTORYID" : "ID",
+    "COL_CATEGORY" : "类别",
+    "COL_PRICE" : "价格",
+    "COL_QUANTITY": "品质",
+    "COL_DESC": "附加描述",
+    "LABEL_LANG": "语言",
+    "LABEL_CSS": "主题",
+    "OPT_LANG_ZH": "中文",
+    "OPT_LANG_EN": "English",
+    "OPT_CSS_BLACK":"夜间主题",
+    "OPT_CSS_WHITE":"日间主题"
+}

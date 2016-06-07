@@ -1,0 +1,15 @@
+{
+    "TITLE": "Angular Table Demo",
+    "INTRO" : "A table list of inventory data",
+    "COL_INVENTORYID" : "ID",
+    "COL_CATEGORY" : "Category",
+    "COL_PRICE" : "Price",
+    "COL_QUANTITY": "Quantity",
+    "COL_DESC": "Description",
+    "LABEL_LANG": "language",
+    "LABEL_CSS": "theme",
+    "OPT_LANG_ZH": "中文",
+    "OPT_LANG_EN": "English",
+    "OPT_CSS_BLACK":"Night Style",
+    "OPT_CSS_WHITE":"Day Style"
+}

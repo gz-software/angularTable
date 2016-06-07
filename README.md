@@ -21,6 +21,7 @@ Tech
 * multilang support via angular-translate.
 * customized theme support.
 * a json format data provided for test.
+* bootstrap UI
 
 Demo site
 -----
@@ -29,5 +30,5 @@ Demo site
 
 Feedback
 -----
-* Mail:[Pango Leung](mailto:pango@gz-software.com)
+* Mail: [Pango Leung](mailto:pango@gz-software.com)
 * Website: [Gz-software](http://www.gz-software.com)

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh" ng-app="main">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>{{"TITLE" | translate}}</title>
+
+		<!-- css -->
+		<link rel="stylesheet" href="css/docs.css">
+		<link rel="stylesheet" href="css/social.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/ng-table.min.css">
+		<!-- jquery js-->
+		<script src="js/jquery.min.js"></script>
+		<!-- angular js-->
+		<script src="js/angular.js"></script>
+		<script src="js/angular-sanitize.js"></script>
+		<script src="js/angular-resource.js"></script>
+		<script src="js/angular-route.js"></script>
+		<script src="js/angular-social.js"></script>
+		<script src="js/angular-translate.min.js"></script>
+		<script src="js/angular-translate-loader-static-files.min.js"></script>
+		<script src="js/ng-table.min.js"></script>
+		<script src="js/embed-codepen.min.js"></script>
+
+		<!-- data file-->
+		<script src="js/inventoryData.js"></script>
+		<!-- main file-->
+		<script src="js/main.js"></script>
+	</head>
+
+	<body class="container-fluid">
+
+		<div style="margin-top:20px;">
+
+			<div class="col-sm-10 col-md-12" ng-controller="tableController">
+				<div id="introDiv" align="center"><h3>{{"INTRO" | translate}}</h3></div>
+				
+				<div id="selectDiv"  style="float:right">
+					{{"LABEL_LANG" | translate}}:
+					<select ng-change="changeLang(langSelect)" ng-model="langSelect" ng-selected="en">
+						<option value="en" >{{"OPT_LANG_EN" | translate}}</option>
+						<option value="zh">{{"OPT_LANG_ZH" | translate}}</option>
+					</select>&nbsp;
+					{{"LABEL_CSS" | translate}}:
+					<select ng-change="changeCss(cssSelect)" ng-model="cssSelect"  ng-selected="white">
+						<option value="black" >{{"OPT_CSS_BLACK" | translate}}</option>
+						<option value="white">{{"OPT_CSS_WHITE" | translate}}</option>
+					</select>
+				</div>
+
+				<hr>
+
+				<div id="tableDiv">
+					<table id="inventoryTable" ng-table="tableParams" class="table" show-filter="true">
+						<tr ng-repeat="invData in $data">
+							<td title="'COL_INVENTORYID'| translate" filter="{ inventoryId :'text'}" sortable="'inventoryId'" align="center">
+								{{invData.inventoryId}}
+							</td>
+							<td title="'COL_CATEGORY'| translate" filter="{ category :'text'}" sortable="'category'" align="center">
+								{{invData.category}}
+							</td>
+							<td title="'COL_PRICE'| translate" filter="{ price :'number'}" sortable="'price'" align="center">
+								{{invData.price}}
+							</td>
+							<td title="'COL_QUANTITY'| translate" filter="{ quantity :'text'}" sortable="'quantity'" align="center">
+								{{invData.quantity}}
+							</td>
+
+							<td title="'COL_DESC'| translate" filter="{ description :'text'}" sortable="'description'" align="center">
+								{{invData.description}}
+							</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
