@@ -25,7 +25,7 @@ Tech
 
 Demo site
 -----
-* [Angular Table](http://www.gz-software.com/github/angularTable/main.html)
+* [Angular Table](http://github.gz-software.com/angularTable/main.html)
 
 
 Feedback
