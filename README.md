@@ -13,6 +13,7 @@ the page number
 * User can switch to a different language by selecting from the language drop down box.
 * User can see a different color/theme of table by selecting from the Theme drop down
 box.
+* I appreciate any contribution for this project, including suggestions, documentation improvements, reporting issues, forks and bugfixs, etc.
 
 
 Tech
